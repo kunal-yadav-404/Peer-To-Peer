@@ -6,4 +6,4 @@ In this digital and highly globalised world, we feel the need for an increase in
 
 <br>
 
-PEER-To-PEER is intended to be an exclusive e-learning platform designed specifically for the alumni of our University and developed using MERN stack.
+PEER-To-PEER is intended to be an exclusive e-learning platform designed specifically for the alumni of our University and developed using MERN stack. It also uses some AWS Services and Stripe Connect.
