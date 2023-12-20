@@ -9,9 +9,15 @@ require("dotenv").config();
 const app = express();
 
 // db
-mongoose.connect(process.env.DATABASE, {})
-  .then(() => console.log("DB connected"))
-  .catch((err) => console.log("DB Error => ", err));
+mongoose
+  .connect(process.env.DATABASE, {
+    userNewUrlParser: true,
+    useFindAndModify: false,
+    useUnifiedTopology: true,
+    useCreateIndex: true,
+  })
+  .then(() => console.log("**DB CONNECTED**"))
+  .catch((err) => console.log("DB CONNECTION ERR => ", err));
 
 // apply middlewares
 app.use(cors());
