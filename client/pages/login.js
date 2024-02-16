@@ -7,8 +7,8 @@ import { Context } from "../context";
 import { useRouter } from "next/router";
 
 const Login = () => {
-  const [email, setEmail] = useState("");
-  const [password, setPassword] = useState("");
+  const [email, setEmail] = useState("ryanstripeseller@gmail.com");
+  const [password, setPassword] = useState("rrrrrr");
   const [loading, setLoading] = useState(false);
 
   // state
@@ -42,7 +42,7 @@ const Login = () => {
       // save in local storage
       window.localStorage.setItem("user", JSON.stringify(data));
       // redirect
-      router.push("/");
+      router.push("/user");
       // setLoading(false);
     } catch (err) {
       toast(err.response.data);
